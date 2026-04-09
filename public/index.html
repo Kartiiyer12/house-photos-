@@ -1298,8 +1298,8 @@
           <div class="gallery-item-overlay"><span class="gallery-item-label">Open-Plan Living &amp; Kitchen</span></div>
         </div>
         <div class="gallery-item g-narrow reveal reveal-delay-1" onclick="openLightbox(1)">
-          <img src="images/kitchen.jpg" alt="Modern kitchen" loading="lazy">
-          <div class="gallery-item-overlay"><span class="gallery-item-label">Modern Kitchen</span></div>
+          <img src="images/kitchen.jpg" alt="Living area" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Living Area</span></div>
         </div>
         <div class="gallery-item g-third reveal" onclick="openLightbox(2)">
           <img src="images/master-bedroom.jpg" alt="Master bedroom with en-suite" loading="lazy">
@@ -1314,8 +1314,8 @@
           <div class="gallery-item-overlay"><span class="gallery-item-label">Open-Plan Living</span></div>
         </div>
         <div class="gallery-item g-half reveal" onclick="openLightbox(5)">
-          <img src="images/balcony-doors.jpg" alt="Balcony doors" loading="lazy">
-          <div class="gallery-item-overlay"><span class="gallery-item-label">Sun Terrace</span></div>
+          <img src="images/balcony-doors.jpg" alt="Kitchen" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Kitchen</span></div>
         </div>
         <div class="gallery-item g-half reveal reveal-delay-1" onclick="openLightbox(6)">
           <img src="images/bedroom-view.jpg" alt="Park views from bedroom" loading="lazy">
@@ -1338,8 +1338,8 @@
           <div class="gallery-item-overlay"><span class="gallery-item-label">Family Bathroom</span></div>
         </div>
         <div class="gallery-item g-third reveal reveal-delay-2" onclick="openLightbox(11)">
-          <img src="images/workroom.jpg" alt="Work room / Bedroom 3" loading="lazy">
-          <div class="gallery-item-overlay"><span class="gallery-item-label">Work Room / Bedroom 3</span></div>
+          <img src="images/kids-room.jpg" alt="Work / Kids Room" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Work / Kids Room</span></div>
         </div>
         <div class="gallery-item g-half reveal" onclick="openLightbox(12)">
           <img src="images/balcony-view.jpg" alt="Scenic views" loading="lazy">
@@ -1352,6 +1352,10 @@
         <div class="gallery-item g-third reveal" onclick="openLightbox(14)">
           <img src="images/exterior-front.jpg" alt="Property entrance" loading="lazy">
           <div class="gallery-item-overlay"><span class="gallery-item-label">Property Entrance</span></div>
+        </div>
+        <div class="gallery-item g-third reveal reveal-delay-1" onclick="openLightbox(15)">
+          <img src="images/hallway.jpg" alt="Hallway and staircase" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Hallway &amp; Staircase</span></div>
         </div>
       </div>
     </div>
@@ -1440,14 +1444,14 @@
 
         <div class="room-card reveal reveal-delay-2" onclick="openLightbox(11)">
           <div class="room-card-image">
-            <img src="images/workroom.jpg" alt="Work room / Bedroom 3" loading="lazy">
+            <img src="images/kids-room.jpg" alt="Work / Kids Room" loading="lazy">
           </div>
           <div class="room-card-body">
-            <h3 class="room-card-title">Work Room / Bedroom 3</h3>
-            <p class="room-card-desc">Versatile third bedroom that works perfectly as a home office or guest room. Good natural light and comfortable proportions on the ground floor.</p>
+            <h3 class="room-card-title">Work / Kids Room</h3>
+            <p class="room-card-desc">Versatile third room on the ground floor &mdash; currently set up as a home office and kids' activity space. Good natural light and comfortable proportions.</p>
             <div class="room-card-tags">
               <span class="room-card-tag">Home Office</span>
-              <span class="room-card-tag">Guest Room</span>
+              <span class="room-card-tag">Kids Room</span>
               <span class="room-card-tag">Ground Floor</span>
             </div>
           </div>
@@ -1819,8 +1823,8 @@
               <span class="floorplan-room-size">Double</span>
             </div>
             <div class="floorplan-room">
-              <span class="floorplan-room-name">Bedroom 3 / Work Room</span>
-              <span class="floorplan-room-size">Double / Home Office</span>
+              <span class="floorplan-room-name">Bedroom 3 / Work / Kids Room</span>
+              <span class="floorplan-room-size">Versatile Space</span>
             </div>
             <div class="floorplan-room">
               <span class="floorplan-room-name">Family Bathroom</span>
@@ -1925,20 +1929,21 @@
   <script>
     const galleryImages = [
       { src: 'images/open-plan-wide.jpg', label: 'Open-Plan Living & Kitchen' },
-      { src: 'images/kitchen.jpg', label: 'Modern Kitchen' },
+      { src: 'images/kitchen.jpg', label: 'Living Area' },
       { src: 'images/master-bedroom.jpg', label: 'Master Bedroom (En-Suite)' },
       { src: 'images/living-balcony.jpg', label: 'Living Room' },
       { src: 'images/open-plan-alt.jpg', label: 'Open-Plan Living' },
-      { src: 'images/balcony-doors.jpg', label: 'Sun Terrace' },
+      { src: 'images/balcony-doors.jpg', label: 'Kitchen' },
       { src: 'images/bedroom-view.jpg', label: 'Park Views from Bedroom' },
       { src: 'images/ensuite.jpg', label: 'En-Suite Bathroom' },
       { src: 'images/kitchen-angle.jpg', label: 'Kitchen' },
       { src: 'images/bedroom-2.jpg', label: 'Bedroom 2' },
       { src: 'images/bathroom.jpg', label: 'Family Bathroom' },
-      { src: 'images/workroom.jpg', label: 'Work Room / Bedroom 3' },
+      { src: 'images/kids-room.jpg', label: 'Work / Kids Room' },
       { src: 'images/balcony-view.jpg', label: 'Scenic Green Views' },
       { src: 'images/kitchen-window.jpg', label: 'Arched Window & Views' },
       { src: 'images/exterior-front.jpg', label: 'Property Entrance' },
+      { src: 'images/hallway.jpg', label: 'Hallway & Staircase' },
     ];
 
     let lbIndex = 0;
