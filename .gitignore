@@ -1,0 +1,12 @@
+.DS_Store
+source/
+work/
+work_v2/
+work_v3/
+work_v4/
+preview/
+*.mp4
+*.mp3
+*.py
+*.MOV
+*.mov

@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Millbrook Apartments, Johnstown, Navan | For Sale</title>
+  <meta name="description" content="Stunning 3-bedroom duplex apartment with own entrance, open-plan living, scenic views, and modern finishes in Johnstown, Navan, Co. Meath. NX bus to Dublin at doorstep.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #1a1a2e;
+      --accent: #c9a96e;
+      --accent-light: #e8d5a8;
+      --accent-dark: #a8884e;
+      --text: #2d2d2d;
+      --text-light: #6b6b6b;
+      --text-muted: #999;
+      --bg: #f8f7f4;
+      --white: #ffffff;
+      --radius: 16px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 30px rgba(0,0,0,0.08);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+      --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+
+    nav.scrolled {
+      background: rgba(26,26,46,0.97);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 40px rgba(0,0,0,0.15);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--accent);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta {
+      background: var(--accent) !important;
+      color: var(--primary) !important;
+      padding: 0.6rem 1.5rem;
+      border-radius: 100px;
+      font-weight: 600 !important;
+      letter-spacing: 0.5px !important;
+    }
+
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: var(--accent-light) !important; }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .nav-hamburger span {
+      width: 24px;
+      height: 2px;
+      background: white;
+      transition: 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 700px;
+      overflow: hidden;
+    }
+
+    .hero-slider { position: absolute; inset: 0; }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 1.2s ease;
+    }
+
+    .hero-slide.active { opacity: 1; }
+
+    .hero-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(26,26,46,0.35) 0%,
+        rgba(26,26,46,0.05) 35%,
+        rgba(26,26,46,0.65) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 4rem 3rem;
+      z-index: 2;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 0.5rem 1.25rem;
+      border-radius: 100px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.25rem, 4.5vw, 4rem);
+      font-weight: 600;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+      max-width: 800px;
+    }
+
+    .hero-address {
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-address svg { vertical-align: middle; margin-right: 4px; }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat { text-align: left; }
+
+    .hero-stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .hero-stat-label {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.55);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 0.2rem;
+    }
+
+    .hero-slider-controls {
+      position: absolute;
+      bottom: 4rem;
+      right: 3rem;
+      z-index: 3;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .slider-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      font-size: 1rem;
+    }
+
+    .slider-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--primary);
+    }
+
+    .slider-count {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+      font-weight: 500;
+      min-width: 40px;
+      text-align: center;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: scroll-bounce 2s infinite;
+    }
+
+    @keyframes scroll-bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    .scroll-indicator-line {
+      width: 1px;
+      height: 35px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+    }
+
+    /* ===== SECTIONS ===== */
+    section { padding: 5rem 2rem; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .section-desc {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 680px;
+    }
+
+    /* ===== KEY STATS BAR ===== */
+    .stats-bar {
+      background: var(--primary);
+      padding: 0;
+    }
+
+    .stats-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .stat-item {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.3s;
+    }
+
+    .stat-item:last-child { border-right: none; }
+    .stat-item:hover { background: rgba(255,255,255,0.03); }
+
+    .stat-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-label {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* ===== OVERVIEW ===== */
+    .overview { background: var(--white); }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 2.5rem;
+    }
+
+    .overview-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .overview-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+
+    .overview-image:hover img { transform: scale(1.03); }
+
+    .overview-text p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+
+    .overview-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .overview-highlight {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .overview-highlight:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateX(4px);
+    }
+
+    .overview-highlight-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery { background: var(--bg); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 260px;
+      gap: 0.75rem;
+      margin-top: 2.5rem;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+
+    .gallery-item:hover img { transform: scale(1.08); }
+
+    .gallery-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(26,26,46,0.7) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.25rem;
+    }
+
+    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+
+    .gallery-item-label {
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .g-wide { grid-column: span 8; }
+    .g-narrow { grid-column: span 4; }
+    .g-half { grid-column: span 6; }
+    .g-third { grid-column: span 4; }
+    .g-tall { grid-row: span 2; }
+
+    /* ===== ROOMS ===== */
+    .rooms { background: var(--white); }
+
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .room-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--bg);
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+
+    .room-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .room-card-image {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+
+    .room-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+
+    .room-card:hover .room-card-image img { transform: scale(1.06); }
+
+    .room-card-body { padding: 1.25rem; }
+
+    .room-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .room-card-desc {
+      color: var(--text-light);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .room-card-tags {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .room-card-tag {
+      padding: 0.25rem 0.65rem;
+      background: var(--white);
+      border-radius: 100px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--text-light);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ===== VIDEO ===== */
+    .video-section {
+      background: var(--primary);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .video-section .section-label { color: var(--accent); }
+    .video-section .section-title { color: white; }
+    .video-section .section-desc { color: rgba(255,255,255,0.55); margin: 0 auto 2.5rem; }
+
+    .video-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: #000;
+    }
+
+    /* ===== VIEWS / LIFESTYLE SPLIT ===== */
+    .split-section {
+      background: var(--white);
+      padding: 0;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 550px;
+    }
+
+    .split-image {
+      overflow: hidden;
+    }
+
+    .split-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s;
+    }
+
+    .split-image:hover img { transform: scale(1.04); }
+
+    .split-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3.5rem;
+    }
+
+    .split-content .section-desc { margin-bottom: 1.5rem; }
+
+    .split-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .split-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .split-list li::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ===== LOCATION & AMENITIES ===== */
+    .location { background: var(--bg); }
+
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .amenity-group {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: all 0.3s;
+    }
+
+    .amenity-group:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: var(--accent);
+    }
+
+    .amenity-group-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .amenity-group-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .amenity-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .amenity-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text);
+      padding: 0.4rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .amenity-list li:last-child { border-bottom: none; }
+
+    .amenity-distance {
+      font-size: 0.75rem;
+      color: var(--accent-dark);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* ===== TRANSPORT ===== */
+    .transport { background: var(--white); }
+
+    .transport-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .transport-card {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .transport-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .transport-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .transport-info h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+    }
+
+    .transport-info p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .transport-tag {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.2rem 0.6rem;
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== DINING & LEISURE ===== */
+    .lifestyle { background: var(--bg); }
+
+    .lifestyle-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .lifestyle-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: all 0.3s;
+    }
+
+    .lifestyle-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .lifestyle-card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .lifestyle-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .lifestyle-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .lifestyle-card-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .lifestyle-card-list li {
+      font-size: 0.85rem;
+      color: var(--text);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .lifestyle-card-list li:last-child { border-bottom: none; }
+
+    .lifestyle-card-list .place-type {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== FLOOR PLAN ===== */
+    .floorplan { background: var(--white); }
+
+    .floorplan-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .floorplan-level {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+
+    .floorplan-level-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .floorplan-rooms {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .floorplan-room {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+    }
+
+    .floorplan-room-name { font-weight: 500; }
+    .floorplan-room-size { color: var(--text-light); }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: var(--primary);
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .contact .section-label { color: var(--accent); }
+    .contact .section-title { color: white; }
+    .contact .section-desc { color: rgba(255,255,255,0.5); margin: 0 auto 2.5rem; }
+
+    .contact-cards {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 2rem 2.5rem;
+      min-width: 260px;
+      transition: all 0.3s;
+      backdrop-filter: blur(10px);
+      text-decoration: none;
+    }
+
+    .contact-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .contact-card-icon { font-size: 1.75rem; margin-bottom: 0.75rem; display: block; }
+
+    .contact-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card-detail {
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .contact-card-sub {
+      color: rgba(255,255,255,0.35);
+      font-size: 0.75rem;
+      margin-top: 0.4rem;
+    }
+
+    /* ===== LIGHTBOX ===== */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.96);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .lightbox.active { display: flex; opacity: 1; }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: var(--radius-sm);
+    }
+
+    .lb-btn {
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.08);
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .lb-btn:hover { background: var(--accent); border-color: var(--accent); color: var(--primary); }
+
+    .lb-close { top: 1.5rem; right: 1.5rem; }
+    .lb-prev { top: 50%; left: 1.5rem; transform: translateY(-50%); }
+    .lb-next { top: 50%; right: 1.5rem; transform: translateY(-50%); }
+
+    .lb-counter {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.45);
+      font-size: 0.8rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d0d1a;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .footer-text {
+      color: rgba(255,255,255,0.25);
+      font-size: 0.75rem;
+    }
+
+    /* ===== REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .stats-bar-inner { grid-template-columns: repeat(3, 1fr); }
+      .overview-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+      .amenities-grid { grid-template-columns: repeat(2, 1fr); }
+      .lifestyle-grid { grid-template-columns: repeat(2, 1fr); }
+      .split-grid { grid-template-columns: 1fr; }
+      .split-image { min-height: 400px; }
+      .floorplan-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-auto-rows: 200px; }
+      .lifestyle-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .nav-links.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: rgba(26,26,46,0.98);
+        backdrop-filter: blur(20px);
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1000;
+      }
+
+      .nav-links.mobile-open a { font-size: 1.2rem; }
+
+      .hero-content { padding: 2rem 1.5rem; }
+      .hero-slider-controls { display: none; }
+
+      section { padding: 3.5rem 1.5rem; }
+
+      .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(5) { grid-column: span 2; }
+
+      .rooms-grid, .amenities-grid { grid-template-columns: 1fr; }
+      .transport-grid { grid-template-columns: 1fr; }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 160px;
+      }
+      .g-wide, .g-narrow, .g-half, .g-third { grid-column: span 1; }
+      .g-wide { grid-column: span 2; }
+      .g-tall { grid-row: span 1; }
+
+      .split-content { padding: 2rem 1.5rem; }
+      .overview-highlights { grid-template-columns: 1fr; }
+      .contact-cards { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Millbrook<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#video">Video Tour</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact" class="nav-cta">Enquire Now</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active">
+        <img src="images/open-plan-wide.jpg" alt="Spacious open-plan living, kitchen, and dining">
+      </div>
+      <div class="hero-slide">
+        <img src="images/balcony-view.jpg" alt="Scenic views from the balcony">
+      </div>
+      <div class="hero-slide">
+        <img src="images/living-kitchen.jpg" alt="Open-plan living area">
+      </div>
+      <div class="hero-slide">
+        <img src="images/master-bedroom.jpg" alt="Master bedroom with en-suite">
+      </div>
+      <div class="hero-slide">
+        <img src="images/living-balcony.jpg" alt="Living room with balcony views">
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">For Sale</div>
+      <h1 class="hero-title">10 Millbrook Apartments, Johnstown</h1>
+      <p class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Johnstown, Navan, Co. Meath
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">3</div>
+          <div class="hero-stat-label">Bedrooms</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">2</div>
+          <div class="hero-stat-label">Bathrooms</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">100m&sup2;</div>
+          <div class="hero-stat-label">Floor Area</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">C2</div>
+          <div class="hero-stat-label">BER Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slider-controls">
+      <button class="slider-btn" onclick="changeSlide(-1)">&#8592;</button>
+      <span class="slider-count" id="slideCount">1 / 5</span>
+      <button class="slider-btn" onclick="changeSlide(1)">&#8594;</button>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-indicator-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div class="stat-item">
+        <span class="stat-icon">&#127968;</span>
+        <div class="stat-value">Duplex</div>
+        <div class="stat-label">Own Entrance</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">&#128205;</span>
+        <div class="stat-value">Johnstown</div>
+        <div class="stat-label">Navan, Co. Meath</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">&#127795;</span>
+        <div class="stat-value">Park Views</div>
+        <div class="stat-label">Scenic Outlook</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">&#128652;</span>
+        <div class="stat-value">NX Bus</div>
+        <div class="stat-label">Dublin at Doorstep</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">&#10024;</span>
+        <div class="stat-value">Move-In</div>
+        <div class="stat-label">Ready Condition</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <section class="overview" id="overview">
+    <div class="container">
+      <div class="section-label reveal">About This Property</div>
+      <h2 class="section-title reveal">A Bright, Modern Home with Everything on Your Doorstep</h2>
+
+      <div class="overview-grid">
+        <div class="overview-image reveal">
+          <img src="images/living-kitchen.jpg" alt="Open-plan living and kitchen area">
+        </div>
+        <div class="overview-text reveal reveal-delay-1">
+          <p>
+            Presenting 10 Millbrook Apartments &mdash; a beautifully maintained 3-bedroom, 2-bathroom duplex apartment with its own private entrance, in the heart of Johnstown, Navan, Co. Meath. This spacious home offers approximately 100m&sup2; of well-designed living space, flooded with natural light and finished to a high standard throughout.
+          </p>
+          <p>
+            The layout is cleverly designed &mdash; three good-sized bedrooms and two bathrooms on the ground floor, with the bright open-plan living, kitchen, and dining area on the upper level, taking full advantage of the elevated views. The contemporary kitchen features striking teal cabinetry with integrated appliances, a breakfast bar, and ample counter space.
+          </p>
+          <p>
+            Recently upgraded with brand new WiFi-enabled smart heaters and a new boiler, the home is energy efficient and comfortable year-round. A south-west facing sun terrace off the living area offers beautiful views of the surrounding green landscape and Johnstown People's Park.
+          </p>
+          <p>
+            With the NX bus stop just outside the estate, Johnstown Shopping Centre a short walk away, and excellent schools within minutes, this is an ideal home for professionals, commuters, and families alike.
+          </p>
+
+          <div class="overview-highlights">
+            <div class="overview-highlight">
+              <div class="overview-highlight-icon">&#9889;</div>
+              <span>WiFi Smart Heaters</span>
+            </div>
+            <div class="overview-highlight">
+              <div class="overview-highlight-icon">&#128293;</div>
+              <span>New Boiler</span>
+            </div>
+            <div class="overview-highlight">
+              <div class="overview-highlight-icon">&#127795;</div>
+              <span>Sun Terrace</span>
+            </div>
+            <div class="overview-highlight">
+              <div class="overview-highlight-icon">&#128274;</div>
+              <span>Own Entrance</span>
+            </div>
+            <div class="overview-highlight">
+              <div class="overview-highlight-icon">&#127858;</div>
+              <span>Modern Kitchen</span>
+            </div>
+            <div class="overview-highlight">
+              <div class="overview-highlight-icon">&#128165;</div>
+              <span>Open-Plan Living</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-label reveal">Gallery</div>
+      <h2 class="section-title reveal">Explore Every Room</h2>
+      <p class="section-desc reveal">Click any image to view in full screen.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item g-wide reveal" onclick="openLightbox(0)">
+          <img src="images/open-plan-wide.jpg" alt="Open plan living" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Open-Plan Living &amp; Kitchen</span></div>
+        </div>
+        <div class="gallery-item g-narrow reveal reveal-delay-1" onclick="openLightbox(1)">
+          <img src="images/kitchen.jpg" alt="Modern kitchen" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Modern Kitchen</span></div>
+        </div>
+        <div class="gallery-item g-third reveal" onclick="openLightbox(2)">
+          <img src="images/master-bedroom.jpg" alt="Master bedroom with en-suite" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Master Bedroom (En-Suite)</span></div>
+        </div>
+        <div class="gallery-item g-third reveal reveal-delay-1" onclick="openLightbox(3)">
+          <img src="images/living-balcony.jpg" alt="Living room with balcony" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Living Room</span></div>
+        </div>
+        <div class="gallery-item g-third g-tall reveal reveal-delay-2" onclick="openLightbox(4)">
+          <img src="images/open-plan-alt.jpg" alt="Open plan alternate angle" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Open-Plan Living</span></div>
+        </div>
+        <div class="gallery-item g-half reveal" onclick="openLightbox(5)">
+          <img src="images/balcony-doors.jpg" alt="Balcony doors" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Sun Terrace</span></div>
+        </div>
+        <div class="gallery-item g-half reveal reveal-delay-1" onclick="openLightbox(6)">
+          <img src="images/bedroom-view.jpg" alt="Park views from bedroom" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Park Views from Bedroom</span></div>
+        </div>
+        <div class="gallery-item g-narrow reveal" onclick="openLightbox(7)">
+          <img src="images/ensuite.jpg" alt="En-suite bathroom" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">En-Suite Bathroom</span></div>
+        </div>
+        <div class="gallery-item g-wide reveal reveal-delay-1" onclick="openLightbox(8)">
+          <img src="images/kitchen-angle.jpg" alt="Kitchen alternate view" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Kitchen</span></div>
+        </div>
+        <div class="gallery-item g-third reveal" onclick="openLightbox(9)">
+          <img src="images/bedroom-2.jpg" alt="Bedroom 2" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Bedroom 2</span></div>
+        </div>
+        <div class="gallery-item g-third reveal reveal-delay-1" onclick="openLightbox(10)">
+          <img src="images/bathroom.jpg" alt="Family bathroom" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Family Bathroom</span></div>
+        </div>
+        <div class="gallery-item g-third reveal reveal-delay-2" onclick="openLightbox(11)">
+          <img src="images/workroom.jpg" alt="Work room / Bedroom 3" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Work Room / Bedroom 3</span></div>
+        </div>
+        <div class="gallery-item g-half reveal" onclick="openLightbox(12)">
+          <img src="images/balcony-view.jpg" alt="Scenic views" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Scenic Green Views</span></div>
+        </div>
+        <div class="gallery-item g-half reveal reveal-delay-1" onclick="openLightbox(13)">
+          <img src="images/kitchen-window.jpg" alt="Kitchen arched window" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Arched Window &amp; Views</span></div>
+        </div>
+        <div class="gallery-item g-third reveal" onclick="openLightbox(14)">
+          <img src="images/exterior-front.jpg" alt="Property entrance" loading="lazy">
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Property Entrance</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section class="rooms" id="rooms">
+    <div class="container">
+      <div class="section-label reveal">Room by Room</div>
+      <h2 class="section-title reveal">Well-Designed Living Spaces</h2>
+
+      <div class="rooms-grid">
+        <div class="room-card reveal" onclick="openLightbox(0)">
+          <div class="room-card-image">
+            <img src="images/open-plan-wide.jpg" alt="Open plan" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Open-Plan Living / Kitchen / Dining</h3>
+            <p class="room-card-desc">Located on the upper level for maximum light and views. Spacious open-plan layout with hardwood flooring, designer teal kitchen with breakfast bar, dining area with arched window, and living area with crystal chandelier and French doors to the balcony.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Upper Level</span>
+              <span class="room-card-tag">Open Plan</span>
+              <span class="room-card-tag">Breakfast Bar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal reveal-delay-1" onclick="openLightbox(1)">
+          <div class="room-card-image">
+            <img src="images/kitchen.jpg" alt="Kitchen" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Modern Kitchen</h3>
+            <p class="room-card-desc">Contemporary teal cabinetry with integrated oven, hob, washing machine, and dishwasher. Generous counter space and a breakfast bar with modern swivel seating.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Oven &amp; Hob</span>
+              <span class="room-card-tag">Dishwasher</span>
+              <span class="room-card-tag">Washing Machine</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal reveal-delay-2" onclick="openLightbox(5)">
+          <div class="room-card-image">
+            <img src="images/living-balcony.jpg" alt="Living with balcony" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Living Room &amp; Sun Terrace</h3>
+            <p class="room-card-desc">Bright living area with full-height French doors opening onto a south-west facing sun terrace with artificial grass. Enjoy panoramic views of lush green parkland and mature trees &mdash; bathed in afternoon and evening sunlight.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">French Doors</span>
+              <span class="room-card-tag">Sun Terrace</span>
+              <span class="room-card-tag">Park Views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal" onclick="openLightbox(2)">
+          <div class="room-card-image">
+            <img src="images/master-bedroom.jpg" alt="Master bedroom with en-suite" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Master Bedroom (En-Suite)</h3>
+            <p class="room-card-desc">Good-sized double bedroom on the ground floor with stylish teal feature wall, built-in wardrobe, hardwood flooring, and views over the park. Serviced by its own en-suite bathroom.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Double</span>
+              <span class="room-card-tag">En-Suite</span>
+              <span class="room-card-tag">Park Views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal reveal-delay-1" onclick="openLightbox(9)">
+          <div class="room-card-image">
+            <img src="images/bedroom-2.jpg" alt="Bedroom 2" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Bedroom 2</h3>
+            <p class="room-card-desc">Another generous double bedroom on the ground floor with oak bed frame, bedside storage, and cozy carpeted flooring. Well-proportioned with plenty of natural light.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Double</span>
+              <span class="room-card-tag">Ground Floor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal reveal-delay-2" onclick="openLightbox(11)">
+          <div class="room-card-image">
+            <img src="images/workroom.jpg" alt="Work room / Bedroom 3" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Work Room / Bedroom 3</h3>
+            <p class="room-card-desc">Versatile third bedroom that works perfectly as a home office or guest room. Good natural light and comfortable proportions on the ground floor.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Home Office</span>
+              <span class="room-card-tag">Guest Room</span>
+              <span class="room-card-tag">Ground Floor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal" onclick="openLightbox(7)">
+          <div class="room-card-image">
+            <img src="images/ensuite.jpg" alt="En-suite bathroom" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">En-Suite Bathroom</h3>
+            <p class="room-card-desc">Teal-tiled en-suite off the master bedroom with WC, wash basin, and shower. Modern fixtures and a clean, contemporary finish.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Shower</span>
+              <span class="room-card-tag">Tiled</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal reveal-delay-1" onclick="openLightbox(10)">
+          <div class="room-card-image">
+            <img src="images/bathroom.jpg" alt="Family bathroom" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Family Bathroom</h3>
+            <p class="room-card-desc">Fully tiled bathroom with teal feature wall, full-length bathtub with shower attachment, WC, and wash basin. Modern fixtures and fittings throughout.</p>
+            <div class="room-card-tags">
+              <span class="room-card-tag">Bathtub</span>
+              <span class="room-card-tag">Shower</span>
+              <span class="room-card-tag">Fully Tiled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Tour -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <div class="section-label reveal">Virtual Tour</div>
+      <h2 class="section-title reveal">Walk Through the Property</h2>
+      <p class="section-desc reveal">Experience every room with our video tour of the property.</p>
+      <div class="video-wrapper reveal">
+        <video controls preload="metadata" poster="images/open-plan-wide.jpg">
+          <source src="video-tour.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Views Split Section -->
+  <section class="split-section">
+    <div class="split-grid">
+      <div class="split-image">
+        <img src="images/garden-view.jpg" alt="Green views from the balcony" loading="lazy">
+      </div>
+      <div class="split-content">
+        <div class="section-label reveal">The Setting</div>
+        <h2 class="section-title reveal">Nature at Your Doorstep, City Within Reach</h2>
+        <p class="section-desc reveal">
+          Step onto your south-west facing sun terrace and take in the beautiful green views &mdash; rolling fields, mature trees, and wide open skies. Yet you're just minutes from shops, schools, restaurants, and a direct NX bus to Dublin city centre. The perfect balance of peaceful living and modern convenience.
+        </p>
+        <ul class="split-list reveal">
+          <li>South-west facing sun terrace with artificial grass &mdash; evening sun all year</li>
+          <li>Johnstown People's Park &mdash; 8-acre community park adjacent to the estate</li>
+          <li>NX bus stop just outside the estate gates</li>
+          <li>Johnstown Shopping Centre only 7 minutes' walk</li>
+          <li>Navan town centre a short drive away</li>
+          <li>M3 motorway (Junction 8) just 2.5km away</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Amenities -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-label reveal">Location &amp; Amenities</div>
+      <h2 class="section-title reveal">Everything You Need, All Nearby</h2>
+      <p class="section-desc reveal">Johnstown is one of Navan's most sought-after residential areas &mdash; a thriving community with excellent amenities, schools, and transport links all within walking distance.</p>
+
+      <div class="amenities-grid">
+        <div class="amenity-group reveal">
+          <div class="amenity-group-icon">&#127891;</div>
+          <h3 class="amenity-group-title">Schools</h3>
+          <ul class="amenity-list">
+            <li>
+              <span>St Stephen's National School</span>
+              <span class="amenity-distance">Walking distance</span>
+            </li>
+            <li>
+              <span>Col&aacute;iste na M&iacute; (Secondary)</span>
+              <span class="amenity-distance">Walking distance</span>
+            </li>
+            <li>
+              <span>Ard R&iacute; Community N.S.</span>
+              <span class="amenity-distance">1.2 km</span>
+            </li>
+            <li>
+              <span>Beaufort College</span>
+              <span class="amenity-distance">2.1 km</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="amenity-group reveal reveal-delay-1">
+          <div class="amenity-group-icon">&#128722;</div>
+          <h3 class="amenity-group-title">Shopping &amp; Services</h3>
+          <ul class="amenity-list">
+            <li>
+              <span>Johnstown Shopping Centre</span>
+              <span class="amenity-distance">7 min walk</span>
+            </li>
+            <li>
+              <span>SuperValu (Smith's)</span>
+              <span class="amenity-distance">7 min walk</span>
+            </li>
+            <li>
+              <span>Costa Coffee</span>
+              <span class="amenity-distance">7 min walk</span>
+            </li>
+            <li>
+              <span>Navan Town Centre &amp; Retail</span>
+              <span class="amenity-distance">5 min drive</span>
+            </li>
+            <li>
+              <span>Blackcastle Shopping Centre</span>
+              <span class="amenity-distance">Navan</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="amenity-group reveal reveal-delay-2">
+          <div class="amenity-group-icon">&#127963;</div>
+          <h3 class="amenity-group-title">Parks &amp; Recreation</h3>
+          <ul class="amenity-list">
+            <li>
+              <span>Johnstown People's Park</span>
+              <span class="amenity-distance">Adjacent</span>
+            </li>
+            <li>
+              <span>Navan Tennis Club</span>
+              <span class="amenity-distance">5 min drive</span>
+            </li>
+            <li>
+              <span>Navan Rugby Club</span>
+              <span class="amenity-distance">5 min drive</span>
+            </li>
+            <li>
+              <span>Johnstown GFC</span>
+              <span class="amenity-distance">Nearby</span>
+            </li>
+            <li>
+              <span>Basketball Court (Park)</span>
+              <span class="amenity-distance">Adjacent</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport -->
+  <section class="transport" id="transport">
+    <div class="container">
+      <div class="section-label reveal">Transport &amp; Commute</div>
+      <h2 class="section-title reveal">Connected to Dublin &amp; Beyond</h2>
+      <p class="section-desc reveal">Whether by bus or car, Dublin city centre and Blanchardstown are easily accessible. The NX bus stops just outside the estate with services running from early morning to late night.</p>
+
+      <div class="transport-grid">
+        <div class="transport-card reveal">
+          <div class="transport-icon">&#128652;</div>
+          <div class="transport-info">
+            <h4>NX Bus &mdash; Dublin Express</h4>
+            <p>Direct service from Johnstown to Dublin city centre via Blanchardstown Shopping Centre. Runs from approximately 04:20 to 23:12 on weekdays. Bus stop just outside the estate.</p>
+            <span class="transport-tag">~1 HOUR TO DUBLIN CITY</span>
+          </div>
+        </div>
+
+        <div class="transport-card reveal reveal-delay-1">
+          <div class="transport-icon">&#128663;</div>
+          <div class="transport-info">
+            <h4>M3 Motorway Access</h4>
+            <p>Junction 8 of the M3 is just 2.5 km away, giving quick access to the M50 and Dublin. Blanchardstown Shopping Centre is an easy 25-minute drive.</p>
+            <span class="transport-tag">JUNCTION 8 &mdash; 2.5 KM</span>
+          </div>
+        </div>
+
+        <div class="transport-card reveal">
+          <div class="transport-icon">&#128655;</div>
+          <div class="transport-info">
+            <h4>Additional Bus Routes</h4>
+            <p>Routes NV1 and 110d also serve the area, with stops within walking distance. Multiple options for commuting and getting around.</p>
+            <span class="transport-tag">NV1 &bull; 110D &bull; NX</span>
+          </div>
+        </div>
+
+        <div class="transport-card reveal reveal-delay-1">
+          <div class="transport-icon">&#128717;</div>
+          <div class="transport-info">
+            <h4>Blanchardstown &amp; M50</h4>
+            <p>Blanchardstown Shopping Centre is approximately 25 minutes by car or accessible directly via the NX bus. Easy access to the M50 ring road for the wider Dublin area.</p>
+            <span class="transport-tag">~25 MIN DRIVE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dining & Leisure -->
+  <section class="lifestyle" id="lifestyle">
+    <div class="container">
+      <div class="section-label reveal">Dining &amp; Leisure</div>
+      <h2 class="section-title reveal">Eat, Drink &amp; Enjoy Navan</h2>
+      <p class="section-desc reveal">Navan offers a vibrant dining and social scene, with award-winning restaurants, characterful pubs, and plenty of activities &mdash; all just a short drive from your front door.</p>
+
+      <div class="lifestyle-grid">
+        <div class="lifestyle-card reveal">
+          <div class="lifestyle-card-header">
+            <div class="lifestyle-card-icon">&#127860;</div>
+            <h3 class="lifestyle-card-title">Restaurants</h3>
+          </div>
+          <ul class="lifestyle-card-list">
+            <li>
+              <span>The Central</span>
+              <span class="place-type">Award-winning gastropub</span>
+            </li>
+            <li>
+              <span>Luvida Restaurant</span>
+              <span class="place-type">Fine dining</span>
+            </li>
+            <li>
+              <span>Zucchini's</span>
+              <span class="place-type">Best Restaurant Meath</span>
+            </li>
+            <li>
+              <span>Room 8</span>
+              <span class="place-type">Navan centre</span>
+            </li>
+            <li>
+              <span>Fifty50</span>
+              <span class="place-type">Mediterranean</span>
+            </li>
+            <li>
+              <span>Soprano Pizza</span>
+              <span class="place-type">Artisan pizza</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lifestyle-card reveal reveal-delay-1">
+          <div class="lifestyle-card-header">
+            <div class="lifestyle-card-icon">&#127866;</div>
+            <h3 class="lifestyle-card-title">Pubs &amp; Nightlife</h3>
+          </div>
+          <ul class="lifestyle-card-list">
+            <li>
+              <span>The Round O</span>
+              <span class="place-type">Est. 1876</span>
+            </li>
+            <li>
+              <span>The Lantern</span>
+              <span class="place-type">Live trad music</span>
+            </li>
+            <li>
+              <span>P. Clarkes</span>
+              <span class="place-type">Cocktail bar</span>
+            </li>
+            <li>
+              <span>The Royal Meath Bar</span>
+              <span class="place-type">Craft beer &amp; pizza</span>
+            </li>
+            <li>
+              <span>Berminghams</span>
+              <span class="place-type">Local favourite</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lifestyle-card reveal">
+          <div class="lifestyle-card-header">
+            <div class="lifestyle-card-icon">&#9917;</div>
+            <h3 class="lifestyle-card-title">Sports &amp; Activities</h3>
+          </div>
+          <ul class="lifestyle-card-list">
+            <li>
+              <span>Navan Tennis Club</span>
+              <span class="place-type">5 floodlit courts</span>
+            </li>
+            <li>
+              <span>Navan Rugby Club</span>
+              <span class="place-type">Swan Lane</span>
+            </li>
+            <li>
+              <span>Johnstown GFC</span>
+              <span class="place-type">GAA</span>
+            </li>
+            <li>
+              <span>Johnstown People's Park</span>
+              <span class="place-type">Walking &amp; jogging</span>
+            </li>
+            <li>
+              <span>Ardboyne Hotel Leisure</span>
+              <span class="place-type">Gym &amp; pool</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lifestyle-card reveal reveal-delay-1">
+          <div class="lifestyle-card-header">
+            <div class="lifestyle-card-icon">&#127973;</div>
+            <h3 class="lifestyle-card-title">Explore Navan &amp; Meath</h3>
+          </div>
+          <ul class="lifestyle-card-list">
+            <li>
+              <span>Navan Town Centre</span>
+              <span class="place-type">5 min drive</span>
+            </li>
+            <li>
+              <span>Hill of Tara</span>
+              <span class="place-type">Historic site</span>
+            </li>
+            <li>
+              <span>Brú na Bóinne (Newgrange)</span>
+              <span class="place-type">UNESCO Heritage</span>
+            </li>
+            <li>
+              <span>Solstice Arts Centre</span>
+              <span class="place-type">Theatre &amp; arts</span>
+            </li>
+            <li>
+              <span>Royal Tara Golf Club</span>
+              <span class="place-type">Championship course</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Plan -->
+  <section class="floorplan" id="floorplan">
+    <div class="container">
+      <div class="section-label reveal">Layout</div>
+      <h2 class="section-title reveal">Accommodation</h2>
+
+      <div class="floorplan-grid">
+        <div class="floorplan-level reveal">
+          <h3 class="floorplan-level-title">Ground Floor &mdash; Bedrooms &amp; Bathrooms</h3>
+          <div class="floorplan-rooms">
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Private Entrance</span>
+              <span class="floorplan-room-size">Own front door</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Master Bedroom (En-Suite)</span>
+              <span class="floorplan-room-size">Double &bull; Park Views</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Bedroom 2</span>
+              <span class="floorplan-room-size">Double</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Bedroom 3 / Work Room</span>
+              <span class="floorplan-room-size">Double / Home Office</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Family Bathroom</span>
+              <span class="floorplan-room-size">Bathtub &amp; Shower</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="floorplan-level reveal reveal-delay-1">
+          <h3 class="floorplan-level-title">Upper Level &mdash; Open-Plan Living</h3>
+          <div class="floorplan-rooms">
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Open-Plan Living / Kitchen / Dining</span>
+              <span class="floorplan-room-size">Largest room</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Kitchen</span>
+              <span class="floorplan-room-size">Teal &bull; Integrated Appliances</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Dining Area</span>
+              <span class="floorplan-room-size">Arched Window</span>
+            </div>
+            <div class="floorplan-room">
+              <span class="floorplan-room-name">Sun Terrace</span>
+              <span class="floorplan-room-size">South-West Facing &bull; Views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Johnstown -->
+  <section class="split-section">
+    <div class="split-grid" style="direction: rtl;">
+      <div class="split-image" style="direction: ltr;">
+        <img src="images/balcony-doors.jpg" alt="Living room with views" loading="lazy">
+      </div>
+      <div class="split-content" style="direction: ltr;">
+        <div class="section-label reveal">Why Johnstown</div>
+        <h2 class="section-title reveal">The Best of Town &amp; Nature, Combined</h2>
+        <p class="section-desc reveal">
+          Johnstown is a thriving, well-established community on the edge of Navan town. With a population of over 12,000, it has its own schools, shops, park, and sports clubs &mdash; everything you need for daily life without ever needing the car. And when you do, Dublin and Blanchardstown are under an hour away.
+        </p>
+        <ul class="split-list reveal">
+          <li>Population of 12,000+ with strong community spirit</li>
+          <li>8-acre Johnstown People's Park with walking tracks &amp; sports</li>
+          <li>SuperValu, Costa, and local shops within walking distance</li>
+          <li>Primary and secondary schools within minutes</li>
+          <li>NX bus to Dublin city &amp; Blanchardstown at the estate gate</li>
+          <li>M3 Junction 8 just 2.5 km &mdash; 25 min to M50</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Interested in This Property?</h2>
+      <p class="section-desc reveal">Schedule a viewing or request more information &mdash; we'd love to show you around.</p>
+
+      <div class="contact-cards">
+        <a href="tel:+353851234567" class="contact-card reveal">
+          <span class="contact-card-icon">&#128222;</span>
+          <h3 class="contact-card-title">Call Us</h3>
+          <div class="contact-card-detail">+353 85 123 4567</div>
+          <div class="contact-card-sub">Available Mon&ndash;Sat, 9am&ndash;6pm</div>
+        </a>
+        <a href="mailto:info@example.com" class="contact-card reveal reveal-delay-1">
+          <span class="contact-card-icon">&#9993;</span>
+          <h3 class="contact-card-title">Email Us</h3>
+          <div class="contact-card-detail">info@example.com</div>
+          <div class="contact-card-sub">We'll respond within 24 hours</div>
+        </a>
+        <a href="#" class="contact-card reveal reveal-delay-2">
+          <span class="contact-card-icon">&#128197;</span>
+          <h3 class="contact-card-title">Book a Viewing</h3>
+          <div class="contact-card-detail">Schedule a Visit</div>
+          <div class="contact-card-sub">In-person or virtual tour</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">10 Millbrook Apartments, Johnstown, Navan, Co. Meath &bull; Property listing</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-btn lb-close" onclick="closeLightbox()">&#10005;</button>
+    <button class="lb-btn lb-prev" onclick="navigateLightbox(-1)">&#8592;</button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lb-btn lb-next" onclick="navigateLightbox(1)">&#8594;</button>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+
+  <script>
+    const galleryImages = [
+      { src: 'images/open-plan-wide.jpg', label: 'Open-Plan Living & Kitchen' },
+      { src: 'images/kitchen.jpg', label: 'Modern Kitchen' },
+      { src: 'images/master-bedroom.jpg', label: 'Master Bedroom (En-Suite)' },
+      { src: 'images/living-balcony.jpg', label: 'Living Room' },
+      { src: 'images/open-plan-alt.jpg', label: 'Open-Plan Living' },
+      { src: 'images/balcony-doors.jpg', label: 'Sun Terrace' },
+      { src: 'images/bedroom-view.jpg', label: 'Park Views from Bedroom' },
+      { src: 'images/ensuite.jpg', label: 'En-Suite Bathroom' },
+      { src: 'images/kitchen-angle.jpg', label: 'Kitchen' },
+      { src: 'images/bedroom-2.jpg', label: 'Bedroom 2' },
+      { src: 'images/bathroom.jpg', label: 'Family Bathroom' },
+      { src: 'images/workroom.jpg', label: 'Work Room / Bedroom 3' },
+      { src: 'images/balcony-view.jpg', label: 'Scenic Green Views' },
+      { src: 'images/kitchen-window.jpg', label: 'Arched Window & Views' },
+      { src: 'images/exterior-front.jpg', label: 'Property Entrance' },
+    ];
+
+    let lbIndex = 0;
+
+    function openLightbox(i) {
+      lbIndex = i;
+      updateLightbox();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function navigateLightbox(dir) {
+      lbIndex = (lbIndex + dir + galleryImages.length) % galleryImages.length;
+      updateLightbox();
+    }
+
+    function updateLightbox() {
+      const img = document.getElementById('lightboxImg');
+      img.src = galleryImages[lbIndex].src;
+      img.alt = galleryImages[lbIndex].label;
+      document.getElementById('lbCounter').textContent =
+        `${lbIndex + 1} / ${galleryImages.length} — ${galleryImages[lbIndex].label}`;
+    }
+
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') navigateLightbox(-1);
+      if (e.key === 'ArrowRight') navigateLightbox(1);
+    });
+
+    document.getElementById('lightbox').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeLightbox();
+    });
+
+    // Hero slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const totalSlides = slides.length;
+
+    function changeSlide(dir) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+      slides[currentSlide].classList.add('active');
+      document.getElementById('slideCount').textContent = `${currentSlide + 1} / ${totalSlides}`;
+    }
+
+    setInterval(() => changeSlide(1), 6000);
+
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu
+    function toggleMobileMenu() {
+      document.getElementById('navLinks').classList.toggle('mobile-open');
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('mobile-open'));
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const t = document.querySelector(this.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
+</body>
+</html>
