@@ -418,6 +418,37 @@
 
     .overview-image:hover img { transform: scale(1.03); }
 
+    .property-highlights {
+      list-style: none;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: var(--bg);
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+    }
+
+    .property-highlights li {
+      position: relative;
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.6;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .property-highlights li:last-child { border-bottom: none; }
+
+    .property-highlights li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
     .overview-text p {
       color: var(--text-light);
       font-size: 0.95rem;
@@ -1238,52 +1269,41 @@
   <section class="overview" id="overview">
     <div class="container">
       <div class="section-label reveal">About This Property</div>
-      <h2 class="section-title reveal">A Bright, Modern Home with Everything on Your Doorstep</h2>
+      <h2 class="section-title reveal">10 Millbrook Apartments, Johnstown, Navan</h2>
 
       <div class="overview-grid">
         <div class="overview-image reveal">
           <img src="images/living-kitchen.jpg" alt="Open-plan living and kitchen area">
         </div>
         <div class="overview-text reveal reveal-delay-1">
+
+          <!-- Highlights -->
+          <ul class="property-highlights">
+            <li>Spacious 3-bedroom, 2-bathroom duplex apartment with own private entrance</li>
+            <li>Bright open-plan living, kitchen &amp; dining area on the upper level with elevated views</li>
+            <li>South-west facing sun terrace with artificial grass overlooking Johnstown People's Park</li>
+            <li>Recently upgraded &mdash; new WiFi-enabled smart heaters &amp; new boiler throughout</li>
+            <li>Contemporary kitchen with teal cabinetry, integrated appliances &amp; breakfast bar</li>
+            <li>Three good-sized bedrooms &amp; two bathrooms on the ground floor</li>
+            <li>NX bus stop to Dublin city (&sim;50 min) &amp; Blanchardstown just outside the estate</li>
+            <li>Walking distance to SuperValu, Johnstown Shopping Centre, primary &amp; secondary schools</li>
+            <li>M3 motorway (Junction 8) only 2.5 km away &mdash; 25 min drive to M50</li>
+            <li>Ideal for first-time buyers, professionals, commuters, or those looking to downsize</li>
+          </ul>
+
           <p>
-            Presenting 10 Millbrook Apartments &mdash; a beautifully maintained 3-bedroom, 2-bathroom duplex apartment with its own private entrance, in the heart of Johnstown, Navan, Co. Meath. This spacious home offers approximately 100m&sup2; of well-designed living space, flooded with natural light and finished to a high standard throughout.
+            Presenting 10 Millbrook Apartments &mdash; a beautifully maintained duplex apartment with its own private entrance, in the heart of Johnstown, Navan, Co. Meath. Extending to approximately 100m&sup2;, this home is flooded with natural light and finished to a high standard throughout.
           </p>
           <p>
-            The layout is cleverly designed &mdash; three good-sized bedrooms and two bathrooms on the ground floor, with the bright open-plan living, kitchen, and dining area on the upper level, taking full advantage of the elevated views. The contemporary kitchen features striking teal cabinetry with integrated appliances, a breakfast bar, and ample counter space.
+            The cleverly designed layout places three good-sized bedrooms and two bathrooms (including master en-suite) on the ground floor, with the bright open-plan living, kitchen, and dining area on the upper level &mdash; taking full advantage of the elevated position and views over Johnstown People's Park. The contemporary kitchen features striking teal cabinetry with integrated oven, hob, dishwasher, and washing machine, complemented by a breakfast bar with modern seating.
           </p>
           <p>
-            Recently upgraded with brand new WiFi-enabled smart heaters and a new boiler, the home is energy efficient and comfortable year-round. A south-west facing sun terrace off the living area offers beautiful views of the surrounding green landscape and Johnstown People's Park.
+            The owner has completed recent upgrades including brand new WiFi-enabled smart heaters and a new boiler, ensuring the home is energy efficient and comfortable year-round. A south-west facing sun terrace with artificial grass off the living area is perfect for relaxing and enjoying the evening sun.
           </p>
           <p>
-            With the NX bus stop just outside the estate, Johnstown Shopping Centre a short walk away, and excellent schools within minutes, this is an ideal home for professionals, commuters, and families alike.
+            Ideally located with the NX bus stop just outside the estate gates providing direct services to Dublin city centre (&sim;50 min) and Blanchardstown Shopping Centre. Johnstown Shopping Centre with SuperValu is a 7-minute walk, and both St Stephen's National School and Col&aacute;iste na M&iacute; secondary school are within walking distance. An excellent opportunity not to be missed.
           </p>
 
-          <div class="overview-highlights">
-            <div class="overview-highlight">
-              <div class="overview-highlight-icon">&#9889;</div>
-              <span>WiFi Smart Heaters</span>
-            </div>
-            <div class="overview-highlight">
-              <div class="overview-highlight-icon">&#128293;</div>
-              <span>New Boiler</span>
-            </div>
-            <div class="overview-highlight">
-              <div class="overview-highlight-icon">&#127795;</div>
-              <span>Sun Terrace</span>
-            </div>
-            <div class="overview-highlight">
-              <div class="overview-highlight-icon">&#128274;</div>
-              <span>Own Entrance</span>
-            </div>
-            <div class="overview-highlight">
-              <div class="overview-highlight-icon">&#127858;</div>
-              <span>Modern Kitchen</span>
-            </div>
-            <div class="overview-highlight">
-              <div class="overview-highlight-icon">&#128165;</div>
-              <span>Open-Plan Living</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
